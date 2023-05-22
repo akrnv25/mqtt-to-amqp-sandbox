@@ -4,7 +4,7 @@ const loggerService = require('./logger.service');
 const BaseError = require('../models/BaseError');
 const noNoticeErrorHandler = require('../error-handlers/no-notice.error-handler');
 
-class AmqpService {
+class MqttService {
   constructor() {
     const mqttConnectionStr = `${config.mqtt.protocol}://${config.mqtt.host}:${config.mqtt.port}`;
     this._connection = mqtt.connect(mqttConnectionStr, {
@@ -63,4 +63,4 @@ class AmqpService {
   }
 }
 
-module.exports = new AmqpService();
+module.exports = new MqttService();
