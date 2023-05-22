@@ -1,0 +1,24 @@
+{
+  "name": "mqtt-to-amqp-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:prod": "node ./src/index.js",
+    "start:dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akrnv25/mqtt-to-amqp-sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akrnv25/mqtt-to-amqp-sandbox/issues"
+  },
+  "homepage": "https://github.com/akrnv25/mqtt-to-amqp-sandbox#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8"
+  }
+}
